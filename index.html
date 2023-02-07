@@ -81,6 +81,10 @@
             <tab-settings v-if="settings.currentTab === 'settings'"></tab-settings>
         </div>
     </div>
+    
+    <script v-if="settings.currentTab === 'mergepedia'">
+        document.getElementsByTagName("html").innerHTML = "!!!"
+    </script>
 
     <script type="text/javascript" src="js/lib/break-infinity.min.js"></script>
     <script type="text/javascript" src="js/lib/adnotations.min.js"></script>
